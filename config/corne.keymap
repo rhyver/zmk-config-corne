@@ -20,8 +20,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE    &kp Q  &kp W  &kp F     &kp P             &kp B          &kp J    &kp L              &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LEFT_ALT  &kp A  &kp R  &kp S     &mt LEFT_SHIFT T  &kp G          &kp M    &mt RIGHT_SHIFT N  &kp E      &kp I    &kp O          &kp SQT
+&kp ESCAPE    &kp Q  &kp W     &kp F        &kp P             &kp B          &kp J    &kp L              &mt LBKT U  &kp Y    &kp SEMICOLON  &kp BSPC
+&kp LEFT_ALT  &mt SQT A  &kp R  &mt MINUS S  &mt LEFT_SHIFT T  &kp G          &kp M    &mt RIGHT_SHIFT N  &kp E       &kp I    &mt SEMI O     &kp SQT
 &kp LEFT_GUI  &kp Z  &kp X  &kp C     &kp D             &kp V          &kp K    &kp H              &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
                             &kp LGUI  &kp TAB           &lt 1 SPACE    &kp RET  &mo 2              &kp RALT
             >;
