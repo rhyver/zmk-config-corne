@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include "keys_de.h"
 
-&mt { tapping-term-ms = <400>; };
+&mt { tapping-term-ms = <600>; };
 
 / {
     keymap {
@@ -23,10 +23,10 @@
             //                    | GUI | SPC | TAB |   | ENT | BSPC | ALT |
 
             bindings = <
-&kp ESCAPE    &kp DE_Q      &kp DE_W  &kp DE_F        &kp DE_P             &kp DE_B        &kp DE_J    &kp DE_L              &mt DE_LBKT DE_U  &kp DE_Y    &kp DE_SEMI  &kp DE_BSLH
-&kp LEFT_ALT  &mt DE_SQT DE_A  &kp DE_R  &mt DE_MINUS DE_S  &mt LEFT_SHIFT DE_T  &kp DE_G        &kp DE_M    &mt RIGHT_SHIFT DE_N  &kp DE_E       &kp DE_I    &mt DE_SEMI DE_O     &kp DE_SQT
-&kp LEFT_GUI  &kp DE_Z      &kp DE_X  &kp DE_C        &kp DE_D             &kp DE_V        &kp DE_K    &kp DE_H              &kp DE_COMMA   &kp DE_DOT  &kp DE_FSLH       &kp RCTRL
-                                &kp LGUI     &kp SPACE         &lt 1 TAB    &kp RET  &kp BACKSPACE      &kp RALT
+&kp ESCAPE    &kp DE_Q         &kp DE_W  &kp DE_F           &kp DE_P             &kp DE_B     &kp DE_J     &kp DE_L              &mt DE_LBKT DE_U  &kp DE_Y    &kp DE_SEMI       &kp DE_BSLH
+&kp LEFT_ALT  &mt DE_SQT DE_A  &kp DE_R  &mt DE_MINUS DE_S  &mt LEFT_SHIFT DE_T  &kp DE_G     &kp DE_M     &mt RIGHT_SHIFT DE_N  &kp DE_E          &kp DE_I    &mt DE_SEMI DE_O  &kp DE_SQT
+&kp LEFT_GUI  &kp DE_Z         &kp DE_X  &kp DE_C           &kp DE_D             &kp DE_V     &kp DE_K     &kp DE_H              &kp DE_COMMA      &kp DE_DOT  &kp DE_FSLH       &kp RCTRL
+                                         &mo 3              &kp SPACE            &lt 1 TAB    &lt 3 ENTER  &kp BACKSPACE         &mo 1
             >;
         };
 
@@ -38,10 +38,10 @@
             //                    | GUI |     |     |   | ENT | RSH | ALT |
 
             bindings = <
-&kp TAB     &kp DE_N1        &kp DE_AT    &kp DE_HASH      &kp DE_LBKT      &kp DE_RBKT        &kp DE_PLUS   &kp DE_N7           &kp DE_N8        &kp DE_N9        &kp DE_N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &kp DE_AMPS  &kp DE_ASTRK  &kp DE_LPAR  &kp DE_RPAR    &kp DE_TILDE  &kp DE_N4     &kp DE_N5        &kp DE_N6  &trans  &trans
-&kp LSHFT   &trans        &trans         &kp DE_PRCNT   &kp DE_LBRC        &kp DE_RBRC          &kp DE_MINUS  &kp DE_N1     &kp DE_N2  &kp DE_N3  &trans  &trans
-                                         &kp LGUI      &trans                &trans                   &kp RET    &kp RIGHT_SHIFT  &kp RALT
+&kp TAB     &kp DE_EXCLAMATION  &kp DE_AT        &kp DE_HASH   &kp DE_LBKT  &kp DE_RBKT    &kp DE_PLUS   &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp BSPC
+&bt BT_CLR  &kp DE_QUESTION     &kp DE_AMPS      &kp DE_ASTRK  &kp DE_LPAR  &kp DE_RPAR    &kp DE_TILDE  &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans     &trans
+&kp LSHFT   &trans              &kt DE_QUESTION  &kp DE_PRCNT  &kp DE_LBRC  &kp DE_RBRC    &kp DE_MINUS  &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans     &trans
+                                                 &kp LGUI      &trans       &trans         &kp RET       &kp N0     &kp RALT
             >;
         };
 
@@ -54,9 +54,18 @@
 
             bindings = <
 &kp TAB    &kp DE_EXCL  &kp DE_AT  &kp DE_HASH  &kp DE_DLLR  &kp DE_PRCNT    &kp DE_CARET  &kp DE_AMPS   &kp DE_ASTRK  &kp DE_LPAR  &kp DE_RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp DE_MINUS  &kp DE_EQUAL  &kp DE_LBKT   &kp DE_RBKT  &kp DE_BSLH  &kp DE_GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp DE_UNDER  &kp DE_PLUS   &kp DE_LBRC   &kp DE_RBRC  &kp DE_PIPE  &kp DE_TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp LCTRL  &trans       &trans     &trans       &trans       &trans          &kp DE_MINUS  &kp DE_EQUAL  &kp DE_LBKT   &kp DE_RBKT  &kp DE_BSLH  &kp DE_GRAVE
+&kp LSHFT  &trans       &trans     &trans       &trans       &trans          &kp DE_UNDER  &kp DE_PLUS   &kp DE_LBRC   &kp DE_RBRC  &kp DE_PIPE  &kp DE_TILDE
+                                   &kp LGUI     &trans       &kp SPACE       &kp RET       &trans        &kp RALT
+            >;
+        };
+
+        controls {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp UP          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
