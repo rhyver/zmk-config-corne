@@ -10,6 +10,7 @@
 #include "keys_de.h"
 
 &mt { tapping-term-ms = <600>; };
+&lt { tapping-term-ms = <600>; };
 
 / {
     keymap {
