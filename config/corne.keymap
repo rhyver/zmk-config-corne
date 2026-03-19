@@ -65,7 +65,7 @@
 &kp TAB    &kp DE_EXCL  &kp DE_AT  &kp DE_HASH  &kp DE_DLLR  &kp DE_PRCNT    &kp DE_CARET  &kp DE_AMPS   &kp DE_ASTRK  &kp DE_LPAR  &kp DE_RPAR  &kp BSPC
 &kp LCTRL  &trans       &trans     &trans       &trans       &trans          &kp DE_MINUS  &kp DE_EQUAL  &kp DE_LBKT   &kp DE_RBKT  &kp DE_BSLH  &kp DE_GRAVE
 &kp LSHFT  &trans       &trans     &trans       &trans       &trans          &kp DE_UNDER  &kp DE_PLUS   &kp DE_LBRC   &kp DE_RBRC  &kp DE_PIPE  &kp DE_TILDE
-                                   &kp LGUI     &trans       &kp SPACE       &kp RET       &trans        &kp RALT
+                                   &kp AT_SIGN  &trans       &kp SPACE       &kp RET       &trans        &kp RALT
             >;
         };
 
