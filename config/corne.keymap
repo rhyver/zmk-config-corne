@@ -50,7 +50,7 @@
 &kp TAB                &kp DE_EXCLAMATION  &kp DE_AT         &kp DE_HASH          &kp DE_LBKT  &kp DE_RBKT    &kp DE_PLUS            &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &kp BSPC
 &mt DE_EURO DE_DOLLAR  &kp DE_QUESTION     &kp DE_AMPS       &kp DE_ASTRK         &kp DE_LPAR  &kp DE_RPAR    &kp DE_UNDERSCORE      &kp DE_N4  &kp DE_N5  &kp DE_N6  &trans     &trans
 &kp DE_PERCENT         &kp DE_TILDE        &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_LBRC  &kp DE_RBRC    &mt DE_EQUAL DE_MINUS  &kp DE_N1  &kp DE_N2  &kp DE_N3  &trans     &trans
-                                                             &kp LGUI             &trans       &trans         &kp RET                &kp DE_N0  &kp RALT
+                                                             &kp AT_SIGN          &trans       &trans         &kp RET                &kp DE_N0  &kp RALT
             >;
         };
 
